@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <div class="container grid">
+      <div class="flex">
+        <div><h2 class="logo">calc</h2></div>
+        <div>
+          <span>THEME</span>
+          <div class="slider"></div>
+        </div>
+      </div>
+
+      <div>
+        <input type="text" name="expression" id="input" placeholder="0"/>
+      </div>
+
+      <div class="flex col btn-div">
+        <div class="operations grid row">
+          <button class="num grow">7</button>
+          <button class="num grow">8</button>
+          <button class="num grow">9</button>
+          <button class="rem grow">DEL</button>
+        </div>
+        <div class="operations grid row">
+          <button class="num grow">4</button>
+          <button class="num grow">5</button>
+          <button class="num grow">6</button>
+          <button class="operation grow">+</button>
+        </div>
+        <div class="operations grid row">
+          <button class="num grow">1</button>
+          <button class="num grow">2</button>
+          <button class="num grow">3</button>
+          <button class="operation grow">-</button>
+        </div>
+        <div class="operations grid row">
+          <button class="num grow">.</button>
+          <button class="num grow">0</button>
+          <button class="num grow">/</button>
+          <button class="operation grow">X</button>
+        </div>
+        <div class="operation grid row end-row">
+          <button class="rem grow">RESET</button>
+          <button class="final grow">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+
+</html>
