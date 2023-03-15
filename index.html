@@ -20,9 +20,16 @@
     <div class="container grid">
       <div class="flex">
         <div><h2 class="logo">calc</h2></div>
-        <div>
-          <span>THEME</span>
-          <div class="slider"></div>
+        <div class="flex theme">
+          <div class="hint">THEME</div>
+          <div class="slider">
+            <div class="flex theme-guide">
+              <p>1</p>
+              <p>2</p>
+              <p>3</p>
+            </div>
+            <input type="range" min="1" max="3" id="themes">
+          </div>
         </div>
       </div>
 
@@ -31,37 +38,37 @@
       </div>
 
       <div class="flex col btn-div">
-        <div class="operations grid row">
-          <button class="num grow">7</button>
-          <button class="num grow">8</button>
-          <button class="num grow">9</button>
-          <button class="rem grow">DEL</button>
+        <div class="grid row">
+          <button data-num="7" class="num grow">7</button>
+          <button data-num="8" class="num grow">8</button>
+          <button data-num="9" class="num grow">9</button>
+          <button data-num="del" class="rem grow" id="del">DEL</button>
         </div>
-        <div class="operations grid row">
-          <button class="num grow">4</button>
-          <button class="num grow">5</button>
-          <button class="num grow">6</button>
-          <button class="operation grow">+</button>
+        <div class="grid row">
+          <button data-num="4" class="num grow">4</button>
+          <button data-num="5"  class="num grow">5</button>
+          <button data-num="6" class="num grow">6</button>
+          <button data-num="+" class="num grow">+</button>
         </div>
-        <div class="operations grid row">
-          <button class="num grow">1</button>
-          <button class="num grow">2</button>
-          <button class="num grow">3</button>
-          <button class="operation grow">-</button>
+        <div class="grid row">
+          <button data-num="1" class="num grow">1</button>
+          <button data-num="2" class="num grow">2</button>
+          <button data-num="3" class="num grow">3</button>
+          <button data-num="-" class="num grow">-</button>
         </div>
-        <div class="operations grid row">
-          <button class="num grow">.</button>
-          <button class="num grow">0</button>
-          <button class="num grow">/</button>
-          <button class="operation grow">X</button>
+        <div class="grid row">
+          <button data-num="." class="num grow">.</button>
+          <button data-num="0" class="num grow">0</button>
+          <button data-num="/" class="num grow">/</button>
+          <button data-num="*" class="num grow">X</button>
         </div>
         <div class="operation grid row end-row">
-          <button class="rem grow">RESET</button>
-          <button class="final grow">=</button>
+          <button data-num="reset" class="rem grow" id="reset">RESET</button>
+          <button data-num="=" class="final grow">=</button>
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 
 </html>
